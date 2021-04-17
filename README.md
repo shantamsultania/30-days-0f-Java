@@ -1,5 +1,8 @@
+# 30 Days of Java Development 
+
 This is my repository for 30 days of Java 
 
+Also, find the description of the Task done day wise in Topic Discussion file above/
 
 week 1 				
 
@@ -24,7 +27,7 @@ Week 4
 	Firebase SDK Java	
 	Firebase Spring boot application Java	
 		
-About me
+# About me
 
 hi, My name is Shantam I am a Java and Python developer I have 3 months of Industrial Experience in developing end-to-end applications in Java and Python.
 I have also worked in AWS Cloud Automation using Java and Python. 
