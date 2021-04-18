@@ -2,31 +2,31 @@
 
 This is my repository for 30 days of Java 
 
-Also, find the description of the Task done day wise in Topic Discussion file above/
+Also, find the description of the Task done day-wise in the Topic Discussion file above as well as the topics Covered.
 
-week 1 				
+week 1              
 
-	Spring boot basics	
-	Spring boot Dao and MVC 	
-	Spring boot JDBC	
-	Spring boot all in one 	
-		
-		
-Week 2 		
+   Spring boot basics 
+   Spring boot Dao and MVC    
+   Spring boot JDBC   
+   Spring boot all in one     
+      
+      
+Week 2        
 
-	AWS SDK Java	
-	AWS Spring boot application Java	
+   AWS SDK Java   
+   AWS Spring boot application Java   
 
-Week 3		
+Week 3    
 
-	GCP SDK JAVA	
-    GCP Spring boot application java	
-		
-Week 4 		
+   GCP SDK JAVA   
+    GCP Spring boot application java   
+      
+Week 4        
 
-	Firebase SDK Java	
-	Firebase Spring boot application Java	
-		
+   Firebase SDK Java  
+   Firebase Spring boot application Java  
+      
 # About me
 
 hi, My name is Shantam I am a Java and Python developer I have 3 months of Industrial Experience in developing end-to-end applications in Java and Python.

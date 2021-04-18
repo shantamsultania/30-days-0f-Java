@@ -1,4 +1,4 @@
-package com.example.day2java.MVC2;
+package com.example.day2java.MVC2.Model;
 
 import lombok.Data;
 

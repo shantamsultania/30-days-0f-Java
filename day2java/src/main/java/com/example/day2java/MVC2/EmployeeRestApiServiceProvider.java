@@ -1,5 +1,8 @@
 package com.example.day2java.MVC2;
 
+import com.example.day2java.MVC2.Controller.EmployeeController;
+import com.example.day2java.MVC2.Model.EmployeeModel;
+import com.example.day2java.MVC2.View.EmployeeView;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -9,14 +12,13 @@ import java.util.List;
 public class EmployeeRestApiServiceProvider {
 
     private final EmployeeView employeeView = new EmployeeView();
-    private List<EmployeeController> employeeControllerList = new ArrayList<>();
+    private final List<EmployeeController> employeeControllerList = new ArrayList<>();
 
-    EmployeeRestApiServiceProvider()
-    {
+    EmployeeRestApiServiceProvider() {
         setEmployeeControllerList();
     }
-    public void setEmployeeControllerList()
-    {
+
+    public void setEmployeeControllerList() {
         EmployeeModel e1 = new EmployeeModel();
         e1.setEmployeeSalary("10000");
         e1.setEmployeeDepartment("cse");
@@ -27,10 +29,9 @@ public class EmployeeRestApiServiceProvider {
 
         EmployeeView employeeView = new EmployeeView();
 
-        EmployeeController employeeController = new EmployeeController(e1,employeeView);
+        EmployeeController employeeController = new EmployeeController(e1, employeeView);
         employeeControllerList.add(employeeController);
     }
-
 
 
     @GetMapping("/getallemp")
@@ -66,7 +67,7 @@ public class EmployeeRestApiServiceProvider {
     }
 
     @PutMapping("/updateempname/{name}/{name2}")
-    public String nameUpdate(@PathVariable String name,@PathVariable String name2) {
+    public String nameUpdate(@PathVariable String name, @PathVariable String name2) {
         if (!employeeControllerList.isEmpty()) {
             for (EmployeeController employeeController : employeeControllerList) {
                 if (employeeController.getEmployeeName().equals(name)) {
