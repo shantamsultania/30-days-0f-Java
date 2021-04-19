@@ -17,3 +17,12 @@ Today I Started with Design patterns. I think this will take around 2-3 days as 
 for today I started with the MVC Design pattern. created 2 programs one for trying the design pattern of MVC and one for Spring boot application in MVC Design pattern I have also made a readme file for others to read about what is MVC so that it could also help them out.
 
 Time Taken: 1 hour of Theory revision + 2 hours of development and Testing  = Total time 3 Hrs
+
+#Day 3 
+
+Date : 19 - April - 2021 
+
+Today I did a hands-on in Dao design pattern for revision this is one of the most used and recommended design pattens according to me.
+I have created 2 programs on the same one for trying DAO design pattern and the other for making a REST API using the same. 
+
+Time Taken: 1 hour of Theory revision + 1 hours of development and Testing  = Total time 2 Hrs
