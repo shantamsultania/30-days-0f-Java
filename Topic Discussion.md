@@ -18,7 +18,7 @@ for today I started with the MVC Design pattern. created 2 programs one for tryi
 
 Time Taken: 1 hour of Theory revision + 2 hours of development and Testing  = Total time 3 Hrs
 
-#Day 3 
+# Day 3 
 
 Date : 19 - April - 2021 
 
@@ -26,3 +26,13 @@ Today I did a hands-on in Dao design pattern for revision this is one of the mos
 I have created 2 programs on the same one for trying DAO design pattern and the other for making a REST API using the same. 
 
 Time Taken: 1 hour of Theory revision + 1 hours of development and Testing  = Total time 2 Hrs
+
+# Day 4
+
+Date : 20 - April - 2021 
+
+Today I did a hands-on at one of the most important accepts of development that is testing I created a Spring boot application using the same MVC design pattern that I revised in Day 2 
+and after that, I tested the application using J unit testing with MockMVC (PS: this can also be used with other design patterns that not an issue).
+I have created 2 programs 1 a simple Spring boot application using MVC design pattern then made a test class using MockMVC 
+
+Time Taken: 1 hour of Spring boot application development + 1 hour of Testing with MockMVC  = Total time 2 Hrs
