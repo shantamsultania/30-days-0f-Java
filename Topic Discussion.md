@@ -36,3 +36,14 @@ and after that, I tested the application using J unit testing with MockMVC (PS: 
 I have created 2 programs 1 a simple Spring boot application using MVC design pattern then made a test class using MockMVC 
 
 Time Taken: 1 hour of Spring boot application development + 1 hour of Testing with MockMVC  = Total time 2 Hrs
+
+
+# Day 5
+
+Date : 21 - April - 2021 
+
+Today I did a hands-on at Database Connectivity for a Spring Boot aaplication. 
+I created 2 programs 1st is to test my Database Connection and 2nd is to make a spring boot application with performs the CRUD operations with my application.
+
+Time Taken: 1 hour of Spring boot application development with Database connectivity (MYSQL) + 1 hour of Testing with MockMVC  = Total time 2 Hrs
+
