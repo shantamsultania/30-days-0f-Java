@@ -13,15 +13,14 @@ public class EmployeeServiceProviderApi {
     }
 
     @GetMapping("/jdbc/createtable")
-    public void createTable()
-    {
-                employeeDao.createTable();
+    public void createTable() {
+        employeeDao.createTable();
     }
 
     @GetMapping("/jdbc/getall")
     public List<Employee> getAll() {
         for (Employee employee : employeeDao.showAllData()) {
-            System.out.println("data :"+employee);
+            System.out.println("data :" + employee);
         }
         return employeeDao.showAllData();
     }
@@ -33,14 +32,12 @@ public class EmployeeServiceProviderApi {
     }
 
     @DeleteMapping("/jdbc/table/delete")
-    public void deleteTable()
-    {
+    public void deleteTable() {
         employeeDao.deleteTable();
     }
 
     @DeleteMapping("/jdbc/row/delete/{id}")
-    public void delete(@PathVariable String id)
-    {
+    public void delete(@PathVariable String id) {
         employeeDao.deleteData(id);
     }
 

@@ -4,13 +4,13 @@ import java.util.List;
 
 public interface EmployeeDao {
 
-    public List<Employee> showAllData();
+    List<Employee> showAllData();
 
-    public void createTable();
+    void createTable();
 
-    public void insertData(Employee employee);
+    void insertData(Employee employee);
 
-    public void deleteData(String id);
+    void deleteData(String id);
 
-    public void deleteTable();
+    void deleteTable();
 }

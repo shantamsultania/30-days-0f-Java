@@ -1,6 +1,6 @@
 package com.example.day5java.JDBCConnectSpringBoot;
 
-import com.example.day5java.ConnectionCreds;
+import com.example.day5java.ConnectionCred;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,9 +12,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
     private Connection connection;
 
     public EmployeeDaoImpl() {
-        ConnectionCreds connectionCreds = new ConnectionCreds();
+        ConnectionCred connectionCred = new ConnectionCred();
         try {
-            connection = DriverManager.getConnection(connectionCreds.getUrl(), connectionCreds.getPassword(), connectionCreds.getUser());
+            connection = DriverManager.getConnection(connectionCred.getUrl(), connectionCred.getPassword(), connectionCred.getUser());
             statement = connection.createStatement();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
