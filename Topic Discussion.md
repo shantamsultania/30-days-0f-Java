@@ -47,3 +47,10 @@ I created 2 programs 1st is to test my Database Connection and 2nd is to make a 
 
 Time Taken: 1 hour of Spring boot application development with Database connectivity (MYSQL) + 1 hour of Testing with MockMVC  = Total time 2 Hrs
 
+# Day 6 
+
+Date : 22 - April - 2021 
+
+Today i did a hands on in JDBC Database Connectivity for MYSQL 
+
+Time taken : 1 hour
