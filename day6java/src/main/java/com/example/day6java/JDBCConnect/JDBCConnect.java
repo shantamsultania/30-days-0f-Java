@@ -1,4 +1,4 @@
-package com.example.day6java;
+package com.example.day6java.JDBCConnect;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
