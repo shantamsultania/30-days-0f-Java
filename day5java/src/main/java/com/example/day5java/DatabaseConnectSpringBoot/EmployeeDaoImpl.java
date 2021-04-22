@@ -1,4 +1,4 @@
-package com.example.day5java.JDBCConnectSpringBoot;
+package com.example.day5java.DatabaseConnectSpringBoot;
 
 import com.example.day5java.ConnectionCred;
 

@@ -1,8 +1,6 @@
-package com.example.day5java.JDBCConnectSpringBoot;
+package com.example.day5java.DatabaseConnectSpringBoot;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeDaoImplTest {
 

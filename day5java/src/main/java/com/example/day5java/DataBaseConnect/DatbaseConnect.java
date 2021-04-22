@@ -1,10 +1,10 @@
-package com.example.day5java.JDBCConnect;
+package com.example.day5java.DataBaseConnect;
 
 import com.example.day5java.ConnectionCred;
 
 import java.sql.*;
 
-public class JdbcConnect {
+public class DatbaseConnect {
 
     public static void main(String[] args) {
 

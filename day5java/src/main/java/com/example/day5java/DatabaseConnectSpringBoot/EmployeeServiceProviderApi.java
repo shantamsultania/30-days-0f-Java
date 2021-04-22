@@ -1,4 +1,4 @@
-package com.example.day5java.JDBCConnectSpringBoot;
+package com.example.day5java.DatabaseConnectSpringBoot;
 
 import org.springframework.web.bind.annotation.*;
 
