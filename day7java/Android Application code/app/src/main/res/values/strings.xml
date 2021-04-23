@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="get">GET Data</string>
+    <string name="post">POST Data</string>
+</resources>
