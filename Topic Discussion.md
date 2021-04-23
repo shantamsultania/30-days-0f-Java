@@ -54,3 +54,11 @@ Date : 22 - April - 2021
 Today i did a hands on in JDBC Database Connectivity for MYSQL 
 
 Time taken : 1 hour
+
+# Day 7 
+
+Date : 23 - April - 2021
+
+Today i connected My spring boot application API with a sample android Application using retrofit.
+
+Time Taken : 2 hrs
