@@ -9,3 +9,8 @@
 5. Java Database connection.
 6. Java JDBC connection for MySql.
 7. connecting Spring boot API with Android Application.
+
+# Week 2 (AWS Week )
+
+1. Revised AWS Ec2 Concepts 
+2. 
