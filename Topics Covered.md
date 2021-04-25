@@ -13,4 +13,4 @@
 # Week 2 (AWS Week )
 
 1. Revised AWS Ec2 Concepts 
-2. 
+2. AWS EC2 
