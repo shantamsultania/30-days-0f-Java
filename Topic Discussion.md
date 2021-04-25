@@ -71,3 +71,11 @@ Date : 24 - April - 2021
 Today I configured my AWS SDK and then Revised some basic concepts of AWS Like Describe EC2 , Images , Snapshots and Volume.
 
 Time Taken : 1 hrs of Learning and 1 hr of coding = 2 hrs 
+
+# Day 9 
+
+Date : 25 - April - 2021 
+
+Today i revised how to use AWS SDK for EC2 Creation and making use of request 
+
+Time Taken  : 30 mins 
