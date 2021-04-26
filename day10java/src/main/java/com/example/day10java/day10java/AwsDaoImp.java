@@ -4,7 +4,6 @@ import com.amazonaws.services.ec2.model.Image;
 import com.amazonaws.services.ec2.model.Instance;
 import com.amazonaws.services.ec2.model.Snapshot;
 import com.amazonaws.services.ec2.model.Volume;
-import com.example.day10java.day10java.AwsDao;
 import com.example.day10java.day8java.DescribeImages;
 import com.example.day10java.day8java.DescribeInstance;
 import com.example.day10java.day8java.DescribeSnapShots;

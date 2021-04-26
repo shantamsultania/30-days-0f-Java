@@ -12,13 +12,13 @@ import java.util.List;
 
 public class DescribeImages extends AwsClientHelper {
 
-    private AmazonEC2 amazonEC2;
+    private final AmazonEC2 amazonEC2;
+
     public DescribeImages() throws Exception {
         amazonEC2 = amazonEC2();
     }
 
-    public List<Image> call()
-    {
+    public List<Image> call() {
         List<Image> imageList = new ArrayList<>();
 
         DescribeImagesRequest callRequest = new DescribeImagesRequest();
@@ -26,8 +26,7 @@ public class DescribeImages extends AwsClientHelper {
         try {
             DescribeImagesResult describeImagesResult = amazonEC2.describeImages(callRequest);
             imageList = describeImagesResult.getImages();
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return imageList;

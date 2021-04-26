@@ -12,21 +12,20 @@ import java.util.List;
 
 public class DescribeSnapShots extends AwsClientHelper {
 
-    private AmazonEC2 amazonEC2;
+    private final AmazonEC2 amazonEC2;
+
     public DescribeSnapShots() throws Exception {
         amazonEC2 = amazonEC2();
     }
 
-    public List<Snapshot> call()
-    {
+    public List<Snapshot> call() {
         List<Snapshot> snapshots = new ArrayList<>();
         DescribeSnapshotsRequest describeSnapshotsRequest = new DescribeSnapshotsRequest();
         describeSnapshotsRequest.setOwnerIds(Arrays.asList("self"));
         try {
             DescribeSnapshotsResult describeSnapshotsResult = amazonEC2.describeSnapshots(describeSnapshotsRequest);
             snapshots = describeSnapshotsResult.getSnapshots();
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return snapshots;

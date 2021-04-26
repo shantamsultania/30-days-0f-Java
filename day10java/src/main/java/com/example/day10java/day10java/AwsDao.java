@@ -9,12 +9,12 @@ import java.util.List;
 
 public interface AwsDao {
 
-    public List<Instance> getAllInstance() throws Exception;
+    List<Instance> getAllInstance() throws Exception;
 
-    public List<Image> getAllImages() throws Exception;
+    List<Image> getAllImages() throws Exception;
 
-    public List<Snapshot> getAllSnapShots() throws Exception;
+    List<Snapshot> getAllSnapShots() throws Exception;
 
-    public List<Volume> getAllVolumes() throws Exception;
+    List<Volume> getAllVolumes() throws Exception;
 
 }
