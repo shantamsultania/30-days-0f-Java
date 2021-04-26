@@ -79,3 +79,11 @@ Date : 25 - April - 2021
 Today i revised how to use AWS SDK for EC2 Creation and making use of request 
 
 Time Taken  : 30 mins 
+
+# Day 10 
+
+Date : 26 - April - 2021 
+
+Today i created a small spring boot application / Api to get Describe EC2 , Images , Snapshots and Volume by passing your AWS Creds as input request 
+
+Time Taken : 1 hr
