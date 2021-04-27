@@ -1,9 +1,6 @@
 package com.example.day10java.day10java;
 
-import com.amazonaws.services.ec2.model.Image;
-import com.amazonaws.services.ec2.model.Instance;
-import com.amazonaws.services.ec2.model.Snapshot;
-import com.amazonaws.services.ec2.model.Volume;
+import com.amazonaws.services.ec2.model.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -57,5 +54,29 @@ public class AwsApiServiceProvider {
             e.printStackTrace();
         }
         return snapshots;
+    }
+
+    @GetMapping("/getvpc")
+    public List<Vpc> showAllVpc()
+    {
+        List<Vpc> vpcs = new ArrayList<>();
+        try {
+            vpcs = awsDao.getAllVpc();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return vpcs;
+    }
+
+    @GetMapping("/getgateway")
+    public List<InternetGateway> showAllInternetGateWay()
+    {
+        List<InternetGateway> internetGatewayList = new ArrayList<>();
+        try {
+            internetGatewayList = awsDao.getAllIGW();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return internetGatewayList;
     }
 }
