@@ -1,9 +1,8 @@
 package com.example.day10java.day10java;
 
-import com.amazonaws.services.ec2.model.Image;
-import com.amazonaws.services.ec2.model.Instance;
-import com.amazonaws.services.ec2.model.Snapshot;
-import com.amazonaws.services.ec2.model.Volume;
+import com.amazonaws.services.ec2.model.*;
+import com.example.day10java.day11java.DescribeNetWorkGateWay;
+import com.example.day10java.day11java.DescribeVpc;
 import com.example.day10java.day8java.DescribeImages;
 import com.example.day10java.day8java.DescribeInstance;
 import com.example.day10java.day8java.DescribeSnapShots;
@@ -36,5 +35,17 @@ public class AwsDaoImp implements AwsDao {
     public List<Volume> getAllVolumes() throws Exception {
         DescribeVolume describeVolume = new DescribeVolume();
         return describeVolume.call();
+    }
+
+    @Override
+    public List<Vpc> getAllVpc() throws Exception {
+        DescribeVpc describeVpc = new DescribeVpc();
+        return describeVpc.call();
+    }
+
+    @Override
+    public List<InternetGateway> getAllIGW() throws Exception {
+        DescribeNetWorkGateWay describeNetWorkGateWay = new DescribeNetWorkGateWay();
+        return describeNetWorkGateWay.call();
     }
 }
