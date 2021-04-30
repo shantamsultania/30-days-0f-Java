@@ -84,6 +84,31 @@ Time Taken  : 30 mins
 
 Date : 26 - April - 2021 
 
-Today i created a small spring boot application / Api to get Describe EC2 , Images , Snapshots and Volume by passing your AWS Creds as input request 
+Today I created a small spring boot application / Api to get Describe EC2 , Images , Snapshots and Volume by passing your AWS Creds as input request 
 
 Time Taken : 1 hr
+
+# Day 11 
+
+Today I revised the concepts of VPC - Virtual Private Cloud 
+
+Time Taken : 2 hrs
+
+# Day 12 
+
+Today I Revised the concept of Cloud Formation which is used to create multiple environment in one click also i created some programs to create a Stack and also to describe them
+
+Time Taken : 2 hrs
+
+# Day 13 
+
+Today I Revised the concept of SSM which is used perform task on multiple EC2 instance in one click in one click also i created some programs to create a Stack and also to describe them 
+
+Time Taken : 2 hrs
+
+
+# Day 14 
+
+Today I created a Spring boot Application for both of my CLoud Formation and SSM Code
+
+Time Taken : 2 hrs

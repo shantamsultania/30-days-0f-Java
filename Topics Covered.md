@@ -15,3 +15,11 @@
 1. Revised AWS Ec2 Concepts 
 2. AWS EC2 
 3. Spring Boot Application of AWS EC2 
+4. VPC 
+5. Amazon Cloud Formations
+6. Amazon SSM 
+7. Spring boot applications of Amazon Cloud Formations and SSM 
+
+# Week 3 (GCP Week )
+
+
