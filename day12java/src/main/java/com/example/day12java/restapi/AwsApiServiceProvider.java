@@ -11,14 +11,12 @@ public class AwsApiServiceProvider {
     private final AwsDao awsDao = new AwsDaoImp();
 
     @GetMapping("/getstacks")
-    public List<String> getStacks()
-    {
+    public List<String> getStacks() {
         return awsDao.getAllStacks("xx");
     }
 
     @GetMapping("/createStacks")
-    public String createStack()
-    {
+    public String createStack() {
         return awsDao.createStack("shantam");
     }
 }

@@ -28,10 +28,9 @@ public class CreateStack extends AwsClientHelper {
                 new com.amazonaws.services.cloudformation.model.CreateStackRequest();
         callRequest.setStackName(request.getStackName());
         Optional<String> url = Optional.ofNullable(request.getTemplateUrl());
-        if (url.isPresent())
-        {
+        if (url.isPresent()) {
             callRequest.setTemplateURL(request.getTemplateUrl());
-        }else{
+        } else {
             callRequest.setTemplateBody(request.getTemplateBody());
         }
 

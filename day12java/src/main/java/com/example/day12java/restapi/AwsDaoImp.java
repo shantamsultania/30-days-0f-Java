@@ -52,13 +52,12 @@ public class AwsDaoImp implements AwsDao {
     public List<String> getAllStacks(String name) {
 
         DescribeStackRequest describeStackRequest = new DescribeStackRequest();
-        if(!name.equals("xx"))
-        {
-         describeStackRequest.setStackName(name);
+        if (!name.equals("xx")) {
+            describeStackRequest.setStackName(name);
         }
         List<String> stack = new ArrayList<>();
         try {
-          DescribeStacks describeStacks = new DescribeStacks(describeStackRequest);
+            DescribeStacks describeStacks = new DescribeStacks(describeStackRequest);
             List<Stack> call = describeStacks.call();
             for (Stack currentStack : call) {
                 stack.add(currentStack.getStackName());

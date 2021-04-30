@@ -7,7 +7,6 @@ import com.amazonaws.services.cloudformation.model.Stack;
 import com.example.day12java.AwsHelper.AwsClientHelper;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -15,8 +14,8 @@ import java.util.Optional;
 @Slf4j
 public class DescribeStacks extends AwsClientHelper {
 
-    private AmazonCloudFormation amazonCloudFormation;
-    private DescribeStackRequest request;
+    private final AmazonCloudFormation amazonCloudFormation;
+    private final DescribeStackRequest request;
 
     public DescribeStacks(DescribeStackRequest request) throws Exception {
         amazonCloudFormation = amazonCloudFormation();
@@ -28,8 +27,7 @@ public class DescribeStacks extends AwsClientHelper {
 
         DescribeStacksRequest callRequest = new DescribeStacksRequest();
         Optional<String> name = Optional.ofNullable(request.getStackName());
-        if (name.isPresent())
-        {
+        if (name.isPresent()) {
             callRequest.setStackName(request.getStackName());
         }
         log.debug("callRequest {}", callRequest);

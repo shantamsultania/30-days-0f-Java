@@ -10,8 +10,7 @@ public class AwsApiServiceProvider {
 
 
     @GetMapping("/runCommand")
-    public boolean runCommand()
-    {
+    public boolean runCommand() {
         return awsDao.runCommand();
 
     }
