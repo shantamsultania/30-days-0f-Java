@@ -112,3 +112,9 @@ Time Taken : 2 hrs
 Today I created a Spring boot Application for both of my CLoud Formation and SSM Code
 
 Time Taken : 2 hrs
+
+# Day 15 
+
+Today I Started working on Google Cloud Platform, and I created a sample program to connect my Spring boot application to Google Cloud Platform and get the data of a Storage bucket from it.
+
+Time Taken : 2 hrs 
