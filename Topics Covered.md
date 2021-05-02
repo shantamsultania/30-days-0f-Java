@@ -23,5 +23,6 @@
 # Week 3 (GCP Week )
 
 1. Connect to GCP and get data from a Storage bucket.
+2. Firebase Cloud Service - Authentication 
 
 
