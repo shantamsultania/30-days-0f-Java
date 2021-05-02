@@ -118,3 +118,9 @@ Time Taken : 2 hrs
 Today I Started working on Google Cloud Platform, and I created a sample program to connect my Spring boot application to Google Cloud Platform and get the data of a Storage bucket from it.
 
 Time Taken : 2 hrs 
+
+# Day 16 
+
+Today I started with GCP - Firebase Cloud and created a simple SDK connect with Firebase Cloud Service
+
+Time Taken : 2-3 hrs (more time due to one error )
