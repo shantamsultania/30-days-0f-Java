@@ -13,7 +13,6 @@ public class FirebaseService {
 
     public void createUserWithEmailPassword(String email, String password) {
 
-
         try {
             UserRecord userRecord = firebaseAuth.createUser(request.setEmail(email).setPassword(password));
             System.out.println("Successfully created new user: " + userRecord.getUid());
@@ -24,7 +23,6 @@ public class FirebaseService {
 
     public void createUserWithPhoneNumber(String phoneNumber) {
 
-
         try {
             UserRecord userRecord = firebaseAuth.createUser(request.setPhoneNumber(phoneNumber));
             System.out.println("Successfully created new user: " + userRecord.getUid());
@@ -34,6 +32,7 @@ public class FirebaseService {
     }
 
     public void verifyEmail(String email) {
+
         try {
 
             String link = firebaseAuth.generateEmailVerificationLink(email);
@@ -44,12 +43,12 @@ public class FirebaseService {
     }
 
     public void userByEmail(String email) {
+
         try {
             UserRecord user = firebaseAuth.getUserByEmail(email);
-            if (user != null)
-            {
-                System.out.println(user.getEmail()+" , "+user.getUid());
-            }else{
+            if (user != null) {
+                System.out.println(user.getEmail() + " , " + user.getUid());
+            } else {
                 System.out.println("user not found");
             }
         } catch (FirebaseAuthException e) {
@@ -58,12 +57,12 @@ public class FirebaseService {
     }
 
     public void userByPhoneNumber(String phoneNumber) {
+
         try {
             UserRecord user = firebaseAuth.getUserByPhoneNumber(phoneNumber);
-            if (user != null)
-            {
-                System.out.println(user.getPhoneNumber()+" , "+user.getUid());
-            }else{
+            if (user != null) {
+                System.out.println(user.getPhoneNumber() + " , " + user.getUid());
+            } else {
                 System.out.println("user not found");
             }
         } catch (FirebaseAuthException e) {

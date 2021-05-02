@@ -12,9 +12,7 @@ import java.io.FileInputStream;
 public class FirebaseConfig {
 
     @PostConstruct
-    public void initialize()
-    {
-
+    public void initialize() {
 
         try {
             FileInputStream serviceAccount = new FileInputStream("./lib/serviceAccountKey.json");
@@ -27,7 +25,6 @@ public class FirebaseConfig {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
 
     }
