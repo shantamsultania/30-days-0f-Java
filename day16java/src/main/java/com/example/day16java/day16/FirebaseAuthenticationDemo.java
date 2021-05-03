@@ -1,4 +1,4 @@
-package com.example.day16java;
+package com.example.day16java.day16;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
@@ -6,7 +6,7 @@ import com.google.firebase.auth.UserRecord;
 import org.springframework.stereotype.Service;
 
 @Service
-public class FirebaseService {
+public class FirebaseAuthenticationDemo {
 
     private final FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     private final UserRecord.CreateRequest request = new UserRecord.CreateRequest();
@@ -36,6 +36,8 @@ public class FirebaseService {
         try {
 
             String link = firebaseAuth.generateEmailVerificationLink(email);
+            EmailSender emailSender = new EmailSender();
+            emailSender.sendCustomEmail(link,email);
             System.out.println(link);
         } catch (FirebaseAuthException e) {
             e.printStackTrace();

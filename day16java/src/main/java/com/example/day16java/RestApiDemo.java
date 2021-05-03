@@ -1,40 +1,53 @@
 package com.example.day16java;
 
+import com.example.day16java.day16.FirebaseAuthenticationDemo;
+import com.example.day16java.day16.FirebaseRealTimeDatabaseDemo;
+import com.example.day16java.day16.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
-public class RestClass {
+public class RestApiDemo {
 
 
     @Autowired
-    FirebaseService firebaseService;
+    FirebaseAuthenticationDemo firebaseAuthenticationDemo;
 
-    @GetMapping("/createuser/{email}/{password}")
+    @Autowired
+    FirebaseRealTimeDatabaseDemo firebaseRealTimeDatabaseDemo;
+
+    @GetMapping("/senddata")
+    public List<User> sendData() {
+        return firebaseRealTimeDatabaseDemo.getUserList();
+    }
+
+    @GetMapping("/createuser/{emxail}/{password}")
     public void createUSerEP(@PathVariable String email, @PathVariable String password) {
-        firebaseService.createUserWithEmailPassword(email, password);
+        firebaseAuthenticationDemo.createUserWithEmailPassword(email, password);
     }
 
     @GetMapping("/createuser/{ph}")
     public void createUSerP(@PathVariable String ph) {
-        firebaseService.createUserWithPhoneNumber(ph);
+        firebaseAuthenticationDemo.createUserWithPhoneNumber(ph);
     }
 
     @GetMapping("/generateVerificationlink/{email}")
     public void verify(@PathVariable String email) {
-        firebaseService.verifyEmail(email);
+        firebaseAuthenticationDemo.verifyEmail(email);
     }
 
     @GetMapping("/checkexistuserwithemail/{email}")
     public void existsEmail(@PathVariable String email) {
-        firebaseService.userByEmail(email);
+        firebaseAuthenticationDemo.userByEmail(email);
     }
 
     @GetMapping("/checkexistuserwithphonenumber/{phone}")
     public void existsphone(@PathVariable String phone) {
-        firebaseService.userByPhoneNumber(phone);
+        firebaseAuthenticationDemo.userByPhoneNumber(phone);
     }
 
 }
