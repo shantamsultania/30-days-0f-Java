@@ -1,8 +1,8 @@
 package com.example.day16java;
 
 import com.example.day16java.day16.FirebaseAuthenticationDemo;
-import com.example.day16java.day16.FirebaseRealTimeDatabaseDemo;
-import com.example.day16java.day16.User;
+import com.example.day16java.day17.FirebaseRealTimeDatabaseDemo;
+import com.example.day16java.day17.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,10 +22,10 @@ public class RestApiDemo {
 
     @GetMapping("/senddata")
     public List<User> sendData() {
-        return firebaseRealTimeDatabaseDemo.getUserList();
+        return firebaseRealTimeDatabaseDemo.getDataFromFirebase();
     }
 
-    @GetMapping("/createuser/{emxail}/{password}")
+    @GetMapping("/createuser/{email}/{password}")
     public void createUSerEP(@PathVariable String email, @PathVariable String password) {
         firebaseAuthenticationDemo.createUserWithEmailPassword(email, password);
     }

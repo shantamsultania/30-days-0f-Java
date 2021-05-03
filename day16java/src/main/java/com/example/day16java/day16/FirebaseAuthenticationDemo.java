@@ -6,7 +6,8 @@ import com.google.firebase.auth.UserRecord;
 import org.springframework.stereotype.Service;
 
 @Service
-public class FirebaseAuthenticationDemo {
+public
+class FirebaseAuthenticationDemo {
 
     private final FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     private final UserRecord.CreateRequest request = new UserRecord.CreateRequest();
@@ -37,7 +38,7 @@ public class FirebaseAuthenticationDemo {
 
             String link = firebaseAuth.generateEmailVerificationLink(email);
             EmailSender emailSender = new EmailSender();
-            emailSender.sendCustomEmail(link,email);
+            emailSender.sendCustomEmail(link, email);
             System.out.println(link);
         } catch (FirebaseAuthException e) {
             e.printStackTrace();

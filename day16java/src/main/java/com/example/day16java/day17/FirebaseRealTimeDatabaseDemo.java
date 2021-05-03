@@ -1,10 +1,13 @@
-package com.example.day16java.day16;
+package com.example.day16java.day17;
 
 import com.google.firebase.database.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Service
 @Slf4j
@@ -51,8 +54,8 @@ public class FirebaseRealTimeDatabaseDemo {
                     }
                     for (User user : userList) {
                         System.out.println(user);
-                    }// fall back
-                    log.error("user after done "+userList.size());
+                    }
+                    log.error("user after done " + userList.size());
                 } else {
                     log.error("error in getting data snapshot");
                 }

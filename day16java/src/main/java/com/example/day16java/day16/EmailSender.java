@@ -1,15 +1,12 @@
 package com.example.day16java.day16;
 
 import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 public class EmailSender {
 
 
-    public void sendCustomEmail(String link,String recipient)
-    {
+    public void sendCustomEmail(String link, String recipient) {
         // email ID of  Sender.
         String user_name_sender = "shantam12300@gmail.com";
         String password = "Shantam@12";
@@ -27,19 +24,18 @@ public class EmailSender {
         props.put("mail.debug", "true");
         props.put("mail.store.protocol", "pop3");
         props.put("mail.transport.protocol", "smtp");
-        props.put("mail.smtp.starttls.enable",false);
+        props.put("mail.smtp.starttls.enable", false);
 
 
-
-        try
-        {
+        try {
             // creating session object to get properties
 
             Session session = Session.getDefaultInstance(props,
-                    new Authenticator(){
+                    new Authenticator() {
                         protected PasswordAuthentication getPasswordAuthentication() {
                             return new PasswordAuthentication(user_name_sender, password);
-                        }});
+                        }
+                    });
 
             // MimeMessage object.
             MimeMessage message = new MimeMessage(session);
@@ -54,15 +50,13 @@ public class EmailSender {
             message.setSubject("Email Verification");
 
             // set body of the email.
-            message.setText("This is your verification link "+link);
+            message.setText("This is your verification link " + link);
 
             // Send email.
-             Transport.send(message);
+            Transport.send(message);
             System.out.println("Mail successfully sent");
-        }
-        catch (Exception e)
-        {
-            System.out.println("Mail successfully sent "+e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Mail successfully sent " + e.getMessage());
         }
     }
 

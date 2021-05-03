@@ -1,4 +1,4 @@
-package com.example.day16java.day16;
+package com.example.day16java.day17;
 
 import lombok.Data;
 
