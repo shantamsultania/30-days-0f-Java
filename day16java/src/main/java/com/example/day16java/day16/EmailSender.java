@@ -9,7 +9,7 @@ public class EmailSender {
     public void sendCustomEmail(String link, String recipient) {
         // email ID of  Sender.
         String user_name_sender = "shantam12300@gmail.com";
-        String password = "Shantam@12";
+        String password = "your password ";
 
 
 //         Setting up mail server

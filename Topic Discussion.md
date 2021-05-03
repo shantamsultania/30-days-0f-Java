@@ -124,3 +124,9 @@ Time Taken : 2 hrs
 Today I started with GCP - Firebase Cloud and created a simple SDK connect with Firebase Cloud Service
 
 Time Taken : 2-3 hrs (more time due to one error )
+
+# Day 17 
+
+Today I started with GCP - Firebase Cloud Real Time Database and made a code to send email using Java
+
+Time Taken : 2
