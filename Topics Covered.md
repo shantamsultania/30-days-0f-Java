@@ -25,5 +25,7 @@
 1. Connect to GCP and get data from a Storage bucket.
 2. Firebase Cloud Service - Authentication 
 3. Firebase Cloud Service - Real Time Database 
+4. Firebase Cloud Service - FireStore
+
 
 
