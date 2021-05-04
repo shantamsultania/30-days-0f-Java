@@ -129,4 +129,11 @@ Time Taken : 2-3 hrs (more time due to one error )
 
 Today I started with GCP - Firebase Cloud Real Time Database and made a code to send email using Java
 
-Time Taken : 2
+Time Taken : 2 hrs
+
+# Day 18 
+
+Today I started with GCP - Firebase FireStore using Java i learned about what is a Collection and document relation and how to perform CRUD in that.
+
+Time Taken : 2 hrs
+
