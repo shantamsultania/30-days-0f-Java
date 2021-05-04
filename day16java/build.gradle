@@ -25,6 +25,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation group: 'javax.mail', name: 'mail', version: '1.4.1'
+    compile files('../../lib/mail-1.4.1.jar')
 
     implementation group: 'com.google.firebase', name: 'firebase-admin', version: '7.2.0'
     compile files('../../lib/firebase-admin-7.2.0.jar')
