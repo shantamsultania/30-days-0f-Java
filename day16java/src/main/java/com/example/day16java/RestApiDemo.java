@@ -3,12 +3,15 @@ package com.example.day16java;
 import com.example.day16java.day16.FirebaseAuthenticationDemo;
 import com.example.day16java.day17.FirebaseRealTimeDatabaseDemo;
 import com.example.day16java.day17.User;
+import com.example.day16java.day18.Employee;
+import com.example.day16java.day18.FirebaseStoreDemo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 @RestController
 public class RestApiDemo {
@@ -19,6 +22,27 @@ public class RestApiDemo {
 
     @Autowired
     FirebaseRealTimeDatabaseDemo firebaseRealTimeDatabaseDemo;
+
+    @Autowired
+    FirebaseStoreDemo firebaseStoreDemo;
+
+
+    @GetMapping("/firebasestore/getcollection")
+    public List<Employee> getCollectionsFireStore() throws ExecutionException, InterruptedException {
+        return firebaseStoreDemo.getDataAllCollections();
+    }
+
+    @GetMapping("/firebasestore/addDocument")
+    public void addDocumentFireStore() throws ExecutionException, InterruptedException {
+        firebaseStoreDemo.addDocument();
+    }
+
+
+    @GetMapping("/firebasestore/getdocument")
+    public Employee getDocumentFireStore() throws ExecutionException, InterruptedException {
+        return firebaseStoreDemo.getDocumentData();
+    }
+
 
     @GetMapping("/senddata")
     public List<User> sendData() {
