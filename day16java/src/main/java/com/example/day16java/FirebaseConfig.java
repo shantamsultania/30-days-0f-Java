@@ -15,7 +15,7 @@ public class FirebaseConfig {
     public void initialize() {
 
         try {
-            FileInputStream serviceAccount = new FileInputStream("./lib/serviceAccountKey.json");
+            FileInputStream serviceAccount = new FileInputStream("F:/serviceAccountKey.json");
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                     .setDatabaseUrl("https://androidproject-4173c-default-rtdb.firebaseio.com")

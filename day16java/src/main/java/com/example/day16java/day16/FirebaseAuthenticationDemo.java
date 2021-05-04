@@ -37,8 +37,8 @@ class FirebaseAuthenticationDemo {
         try {
 
             String link = firebaseAuth.generateEmailVerificationLink(email);
-            EmailSender emailSender = new EmailSender();
-            emailSender.sendCustomEmail(link, email);
+//            EmailSender emailSender = new EmailSender();
+//            emailSender.sendCustomEmail(link, email);
             System.out.println(link);
         } catch (FirebaseAuthException e) {
             e.printStackTrace();
