@@ -19,7 +19,7 @@ import java.util.concurrent.ExecutionException;
 public class FirebaseStoreDemo {
 
     Firestore firestore = FirestoreClient.getFirestore();
-    private List<Employee> employeeList = new ArrayList<>();
+    private final List<Employee> employeeList = new ArrayList<>();
 
     public List<Employee> getDataAllCollections() throws ExecutionException, InterruptedException {
 
@@ -27,7 +27,7 @@ public class FirebaseStoreDemo {
         ApiFuture<QuerySnapshot> querySnapshotApiFuture = collectionReference.get();
         for (QueryDocumentSnapshot queryDocumentSnapshot : querySnapshotApiFuture.get()) {
             Employee employee = queryDocumentSnapshot.toObject(Employee.class);
-            log.info("data = Employee "+employee);
+            log.info("data = Employee " + employee);
             employeeList.add(employee);
         }
 
@@ -39,11 +39,10 @@ public class FirebaseStoreDemo {
         ApiFuture<DocumentSnapshot> documentSnapshotApiFuture = employeeDataReference.get();
         DocumentSnapshot documentSnapshot = documentSnapshotApiFuture.get();
         Employee employee = new Employee();
-        if (documentSnapshot.exists())
-        {
+        if (documentSnapshot.exists()) {
             employee = documentSnapshot.toObject(Employee.class);
-            log.info("data = Employee "+employee);
-        }else{
+            log.info("data = Employee " + employee);
+        } else {
             log.error("error in getting employee ");
         }
         return employee;
@@ -51,7 +50,7 @@ public class FirebaseStoreDemo {
 
     public void addDocument() throws ExecutionException, InterruptedException {
 
-        Map<String,Employee> employeeMap = new HashMap<>();
+        Map<String, Employee> employeeMap = new HashMap<>();
 
         Employee employee = new Employee();
         employee.setEmployeeId("001");
@@ -59,12 +58,11 @@ public class FirebaseStoreDemo {
         employee.setEmployeeDepartment("csa");
         employee.setEmployeeName("asd");
 
-        employeeMap.put("test",employee);
+        employeeMap.put("test", employee);
 
         ApiFuture<WriteResult> document = firestore.collection("employee").document("new document").set(employee);
         System.out.println(document.get().getUpdateTime());
     }
-
 
 
 }
