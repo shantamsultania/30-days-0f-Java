@@ -1,10 +1,10 @@
-# 30 Days of Java Development 
+# Java Development 
 
-This is my repository for 30 days of Java 
+This is my repository for Java SPring boot Revision in which I have covered some basic to intermediate concepts of spring boot 
 
 Also, find the description of the Task done day-wise in the Topic Discussion file above as well as the topics Covered.
 
-week 1  17 - April - 2021 - 23 - April -2021             
+week 1            
 
    Spring boot basics 
    Spring boot Dao and MVC    
@@ -21,10 +21,7 @@ Week 2
 Week 3    
 
    GCP SDK JAVA   
-    GCP Spring boot application java   
-      
-Week 4        
-
+    GCP Spring boot application java  
    Firebase SDK Java  
    Firebase Spring boot application Java  
       
